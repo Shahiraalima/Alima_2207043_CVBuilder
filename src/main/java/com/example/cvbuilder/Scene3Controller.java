@@ -19,7 +19,7 @@ public class Scene3Controller {
     private VBox Right;
 
     public void loadData(ObservableList<CVdetails> list){
-//        Up.setStyle("-fx-background-color: grey;");
+
         for(CVdetails c : list){
             Label nameLabel = new Label(c.getName());
             nameLabel.setStyle("-fx-font-size: 50px; -fx-font-weight: bold;");
@@ -40,7 +40,7 @@ public class Scene3Controller {
 
 
             VBox phoneBox = new VBox(5);
-            Label phone = new Label("Phone");
+            Label phone = new Label("Phone Number");
             phone.setStyle("-fx-font-size: 30px; -fx-font-weight: bold; -fx-underline: true;");
             Label phoneLabel = new Label(c.getPhone());
             phoneLabel.setStyle("-fx-font-size: 18px;");
@@ -61,28 +61,28 @@ public class Scene3Controller {
             rightVBox.setPadding(new Insets(10));
 
             VBox skillVBox = new VBox(5);
-            Label skill = new Label("Skill");
+            Label skill = new Label("Skills");
             skill.setStyle("-fx-font-size: 30px; -fx-font-weight: bold; -fx-underline: true;");
             Label skillLabel = new Label(c.getSkill());
             skillLabel.setStyle("-fx-font-size: 18px;");
             skillVBox.getChildren().addAll(skill, skillLabel);
 
             VBox educationVBox = new VBox(5);
-            Label education = new Label("Education");
+            Label education = new Label("Educational Qualifications");
             education.setStyle("-fx-font-size: 30px; -fx-font-weight: bold; -fx-underline: true;");
             Label educationLabel = new Label(c.getEducation());
             educationLabel.setStyle("-fx-font-size: 18px;");
             educationVBox.getChildren().addAll(education, educationLabel);
 
             VBox experienceVBox = new VBox(5);
-            Label experience = new Label("Experience");
+            Label experience = new Label("Work Experiences");
             experience.setStyle("-fx-font-size: 30px; -fx-font-weight: bold; -fx-underline: true;");
             Label WorkLabel = new Label(c.getWork());
             WorkLabel.setStyle("-fx-font-size: 18px;");
             experienceVBox.getChildren().addAll(experience, WorkLabel);
 
             VBox projectVBox = new VBox(5);
-            Label project = new Label("Project");
+            Label project = new Label("Projects");
             project.setStyle("-fx-font-size: 30px; -fx-font-weight: bold; -fx-underline: true;");
             Label ProjectLabel= new Label(c.getProject());
             ProjectLabel.setStyle("-fx-font-size: 18px;");
