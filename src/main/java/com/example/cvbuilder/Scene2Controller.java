@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -41,6 +42,16 @@ public class Scene2Controller {
 
     @FXML
     void switchToScene3(ActionEvent event) throws IOException {
+        if(isEmpty(name, "Name")) return;
+        if(isEmpty(email, "E-mail")) return;
+        if(isEmpty(phone, "Phone")) return;
+        if(isEmpty(address, "Address")) return;
+        if(isEmpty(Education, "Educational Qualifications")) return;
+        if(isEmpty(skill, "Skills")) return;
+        if(isEmpty(work, "Work")) return;
+        if(isEmpty(projects, "Projects")) return;
+
+
         CVdetails cv = new CVdetails(name.getText(), email.getText(), phone.getText(), address.getText(),  Education.getText(), skill.getText(), work.getText(), projects.getText());
         list.add(cv);
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Scene3.fxml"));
@@ -54,5 +65,17 @@ public class Scene2Controller {
         stage.setTitle("Create New CV");
         stage.setScene(scene);
         stage.show();
+    }
+
+    private boolean isEmpty(TextField tf, String fieldName){
+        if(tf.getText().trim().isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Warning");
+            alert.setHeaderText("Required field missing!");
+            alert.setContentText(fieldName);
+            alert.showAndWait();
+            return true;
+        }
+        return false;
     }
 }

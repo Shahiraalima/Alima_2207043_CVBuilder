@@ -6,8 +6,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.Scene3Controller">
    <children>
-      <VBox fx:id="Up" layoutX="-1.0" prefHeight="100.0" prefWidth="683.0" AnchorPane.bottomAnchor="490.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <VBox fx:id="Left" layoutX="-1.0" layoutY="100.0" prefHeight="487.0" prefWidth="194.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="490.0" AnchorPane.topAnchor="100.8" />
-      <VBox fx:id="Right" layoutX="197.0" layoutY="101.0" prefHeight="487.0" prefWidth="487.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0" />
+      <VBox fx:id="Up" layoutX="-1.0" prefHeight="100.0" prefWidth="683.0" style="-fx-background-color: #000080;" AnchorPane.bottomAnchor="490.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox fx:id="Left" layoutX="-1.0" layoutY="100.0" prefHeight="487.0" prefWidth="194.0" style="-fx-background-color: SILVER;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="490.0" AnchorPane.topAnchor="100.8" />
+      <VBox fx:id="Right" layoutX="197.0" layoutY="101.0" prefHeight="487.0" prefWidth="487.0" style="-fx-background-color: WHITE;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0" />
    </children>
 </AnchorPane>

@@ -17,15 +17,21 @@ public class Scene3Controller {
     private VBox Right;
 
     public void loadData(ObservableList<CVdetails> list){
+        Up.setStyle("-fx-background-color: grey;");
         for(CVdetails c : list){
-            Up.getChildren().add(new Label(c.getName()));
+            Label nameLabel = new Label(c.getName());
+            nameLabel.setStyle("-fx-font-size: 30px; -fx-font-weight: bold;");
+            nameLabel.setMaxWidth(Double.MAX_VALUE);
+            nameLabel.setStyle(nameLabel.getStyle() + "-fx-alignment: CENTER;");
+            Up.getChildren().add(nameLabel);
+//            Up.getChildren().add(new Label(c.getName()));
             VBox leftVBox = new VBox(3);
             leftVBox.getChildren().addAll(new Label("E-mail: \n" + c.getEmail()),
                     new Label("Phone No: \n" + c.getEmail()),
                     new Label("Address: \n" + c.getAddress()));
             Left.getChildren().add(leftVBox);
 
-            VBox rightVBox = new VBox(3);
+            VBox rightVBox = new VBox(4);
             rightVBox.getChildren().addAll(new Label("Educational Qualifications: \n" + c.getSkill()),
                 new Label("Skills: \n" + c.getSkill()),
                 new Label("Work Experiences: \n" + c.getWork()),
@@ -33,6 +39,4 @@ public class Scene3Controller {
             Right.getChildren().add(rightVBox);
         }
     }
-
-
 }
