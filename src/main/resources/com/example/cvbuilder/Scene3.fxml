@@ -6,21 +6,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox layoutX="-1.0" prefHeight="100.0" prefWidth="683.0" AnchorPane.bottomAnchor="490.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <VBox layoutX="-1.0" layoutY="100.0" prefHeight="487.0" prefWidth="194.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="490.0" AnchorPane.topAnchor="100.8">
-         <children>
-            <VBox prefHeight="158.0" prefWidth="193.0" />
-            <VBox layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="193.0" />
-            <VBox layoutX="10.0" layoutY="168.0" prefHeight="158.0" prefWidth="193.0" />
-         </children>
-      </VBox>
-      <VBox layoutX="197.0" layoutY="101.0" prefHeight="487.0" prefWidth="487.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
-         <children>
-            <VBox prefHeight="113.0" prefWidth="486.0" />
-            <VBox layoutX="10.0" layoutY="10.0" prefHeight="113.0" prefWidth="486.0" />
-            <VBox layoutX="10.0" layoutY="124.0" prefHeight="113.0" prefWidth="486.0" />
-            <VBox layoutX="10.0" layoutY="237.0" prefHeight="113.0" prefWidth="486.0" />
-         </children>
-      </VBox>
+      <VBox fx:id="Up" layoutX="-1.0" prefHeight="100.0" prefWidth="683.0" AnchorPane.bottomAnchor="490.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox fx:id="Left" layoutX="-1.0" layoutY="100.0" prefHeight="487.0" prefWidth="194.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="490.0" AnchorPane.topAnchor="100.8" />
+      <VBox fx:id="Bottom" layoutX="197.0" layoutY="101.0" prefHeight="487.0" prefWidth="487.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0" />
    </children>
 </AnchorPane>
