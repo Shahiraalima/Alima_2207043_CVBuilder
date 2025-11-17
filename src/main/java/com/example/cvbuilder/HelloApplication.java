@@ -15,8 +15,8 @@ public class HelloApplication extends Application {
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 320, 240);
         stage.setResizable(false);
-        stage.setWidth(600);
-        stage.setHeight(600);
+        stage.setWidth(700);
+        stage.setHeight(700);
         stage.setTitle("CVBuilder");
         stage.setScene(scene);
         stage.show();

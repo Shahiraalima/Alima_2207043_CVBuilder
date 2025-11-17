@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<BorderPane prefHeight="661.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="661.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cvbuilder.Scene2Controller">
    <center>
       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="639.0" translateY="10.0">
         <columnConstraints>
@@ -38,7 +38,7 @@
                   <Insets left="20.0" />
                </GridPane.margin>
             </Label>
-            <TextField prefHeight="59.0" prefWidth="382.0" GridPane.columnIndex="1" />
+            <TextField fx:id="name" prefHeight="59.0" prefWidth="382.0" GridPane.columnIndex="1" />
             <Label prefHeight="59.0" prefWidth="254.0" text="Email Address" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
@@ -47,7 +47,7 @@
                   <Insets left="20.0" />
                </GridPane.margin>
             </Label>
-            <TextField prefHeight="59.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="email" prefHeight="59.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label prefHeight="57.0" prefWidth="254.0" text="Phone Number" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
@@ -96,13 +96,13 @@
                   <Insets left="20.0" />
                </GridPane.margin>
             </Label>
-            <TextField prefHeight="59.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField prefHeight="58.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField prefHeight="60.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField prefHeight="58.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <TextField prefHeight="58.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <TextField prefHeight="59.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Generate CV" translateX="250.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+            <TextField fx:id="phone" prefHeight="59.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="address" prefHeight="58.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="Education" prefHeight="60.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="skill" prefHeight="58.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="work" prefHeight="58.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="projects" prefHeight="59.0" prefWidth="382.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToScene3" text="Generate CV" translateX="250.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>

@@ -41,11 +41,13 @@ public class Scene2Controller {
 
     @FXML
     void switchToScene3(ActionEvent event) throws IOException {
+        CVdetails cv = new CVdetails(name.getText(), email.getText(), phone.getText(), address.getText(),  Education.getText(), skill.getText(), work.getText(), projects.getText());
+        list.add(cv);
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Scene3.fxml"));
         Parent root = (Parent) loader.load();
 
         Scene3Controller controller = loader.getController();
-        controller.loadData(cvdetails);
+        controller.loadData(list);
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
