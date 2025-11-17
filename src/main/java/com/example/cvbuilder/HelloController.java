@@ -19,10 +19,6 @@ public class HelloController {
     private Stage stage;
     private Scene scene;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome! Create your CV easily and precisely");
-    }
 
     @FXML
     public void swtichToScene2(ActionEvent event)throws IOException {
