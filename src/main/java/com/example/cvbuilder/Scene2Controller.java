@@ -53,10 +53,4 @@ public class Scene2Controller {
         stage.setScene(scene);
         stage.show();
     }
-
-
-
-
-
-
 }
