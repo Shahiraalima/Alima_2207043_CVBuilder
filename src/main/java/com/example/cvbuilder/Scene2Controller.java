@@ -35,6 +35,10 @@ public class Scene2Controller {
     @FXML
     TextField projects;
 
+    private final userDAO userDAO = new userDAO();
+    private int currentUserID ;
+    @FXML
+
     private ObservableList<CVdetails> list;
     public void initialize(){
         list = FXCollections.observableArrayList();

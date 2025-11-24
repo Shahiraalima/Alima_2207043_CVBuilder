@@ -6,13 +6,20 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class DataBaseHelper {
-    private static final String DB_URL = "jdbc:sqlite:sample.db";
+    private static final String DB_URL = "jdbc:sqlite:cv_builder.db";
     private static Connection connection;
 
     private static final String CREATE_TABLE_SQL =
-            "CREATE TABLE IF NOT EXISTS sample_nodes (" +
+            "CREATE TABLE IF NOT EXISTS users (" +
                     "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," +
-                    "json_data TEXT NOT NULL" +
+                    "name TEXT NOT NULL," +
+                    "email TEXT NOT NULL," +
+                    "phone TEXT NOT NULL," +
+                    "address TEXT NOT NULL," +
+                    "education TEXT NOT NULL," +
+                    "skills TEXT NOT NULL," +
+                    "work_experience TEXT NOT NULL," +
+                    "projects TEXT NOT NULL" +
                     ");";
 
     public static void initDatabase() {
@@ -35,5 +42,11 @@ public class DataBaseHelper {
         }
     }
 
+    public  static Connection getConnection() throws SQLException {
+        if(connection == null || connection.isClosed()) {
+            connection = DriverManager.getConnection(DB_URL);
+        }
+        return connection;
+    }
 
 }
