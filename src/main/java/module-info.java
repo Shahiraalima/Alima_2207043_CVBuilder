@@ -12,6 +12,7 @@ module com.example.cvbuilder {
     requires com.almasb.fxgl.all;
     requires javafx.base;
     requires javafx.graphics;
+    requires java.sql;
 
     opens com.example.cvbuilder to javafx.fxml;
     exports com.example.cvbuilder;
